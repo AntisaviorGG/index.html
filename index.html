@@ -187,15 +187,10 @@
   .first100 .section-title { color: #fff; }
   .first100 .section-sub { color: rgba(255,255,255,.8); }
   .first100 .section-kicker { color: var(--yellow); }
-  .counter-box {
-    text-align: center; background: rgba(255,255,255,.08); border: 1.5px solid rgba(255,200,50,.5);
-    border-radius: 20px; padding: 28px 20px; max-width: 480px; margin: 0 auto 40px;
+  .spots-note {
+    text-align: center; font-family: "Poppins", sans-serif; font-weight: 700; font-size: clamp(1.15rem, 3vw, 1.4rem);
+    color: var(--yellow); max-width: 560px; margin: 0 auto 40px;
   }
-  .counter-box .big {
-    font-family: "Poppins", sans-serif; font-weight: 900; font-size: clamp(2.4rem, 6vw, 3.4rem);
-    color: var(--yellow); line-height: 1;
-  }
-  .counter-box .label { font-size: 1rem; color: rgba(255,255,255,.85); margin-top: 6px; font-weight: 600; }
   .perks { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 960px; margin: 0 auto; }
   .perk {
     background: rgba(255,255,255,.07); border-radius: 16px; padding: 24px 22px;
@@ -364,10 +359,7 @@
     <h2 class="section-title">Be One of the <span class="accent" style="color: var(--yellow);">First 100</span></h2>
     <p class="section-sub">The first 100 people on the list get more than early access — they become founding members of The Corny Crew. These spots don't come back.</p>
 
-    <div class="counter-box">
-      <div class="big"><span id="spots-claimed">0</span> / 100</div>
-      <div class="label">spots claimed — claim yours before they're gone</div>
-    </div>
+    <p class="spots-note">Only 100 spots. Once they're gone, they're gone for good.</p>
 
     <div class="perks">
       <div class="perk">
