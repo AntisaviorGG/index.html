@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're In! — Corny Inc.</title>
+<meta name="description" content="You're one of the First 100. Welcome to The Corny Crew.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --yellow: #FFC832;
+    --teal: #00A8A8;
+    --coral: #FF6B5B;
+    --navy: #1A2B4A;
+    --warm-white: #FFF8F0;
+    --charcoal: #2D2D2D;
+    --muted: #6B7280;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    color: var(--charcoal);
+    background: var(--warm-white);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  h1, h2 { font-family: "Poppins", "Inter", sans-serif; line-height: 1.15; }
+  a { color: inherit; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; width: 100%; }
+
+  nav { background: var(--navy); color: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.12); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { font-family: "Poppins", sans-serif; font-weight: 800; font-size: 1.5rem; text-decoration: none; color: var(--yellow); }
+  .logo span { color: #fff; font-weight: 600; }
+  .nav-home {
+    color: #fff; text-decoration: none; font-weight: 600; font-size: .95rem; opacity: .9;
+  }
+  .nav-home:hover { color: var(--yellow); opacity: 1; }
+
+  main { flex: 1; display: flex; align-items: center; padding: 64px 0; }
+  .card {
+    background: #fff; border-radius: 24px; padding: 56px 40px; text-align: center;
+    box-shadow: 0 16px 48px rgba(26,43,74,.12); width: 100%;
+  }
+  .check {
+    width: 84px; height: 84px; border-radius: 50%; background: var(--teal); color: #fff;
+    display: flex; align-items: center; justify-content: center; margin: 0 auto 28px;
+    font-size: 2.4rem; font-weight: 800; font-family: "Poppins", sans-serif;
+    box-shadow: 0 8px 24px rgba(0,168,168,.35);
+  }
+  h1 { font-size: clamp(2rem, 5vw, 2.8rem); color: var(--navy); font-weight: 900; margin-bottom: 14px; }
+  h1 .accent { color: var(--coral); }
+  .lead { font-size: 1.15rem; color: var(--charcoal); max-width: 520px; margin: 0 auto 12px; }
+  .lead strong { color: var(--navy); }
+  .sub { color: var(--muted); max-width: 520px; margin: 0 auto 36px; font-size: 1rem; }
+
+  .next-steps {
+    text-align: left; background: var(--warm-white); border-radius: 16px;
+    padding: 28px 28px 8px; margin-bottom: 36px;
+  }
+  .next-steps h2 { font-size: 1.15rem; color: var(--navy); margin-bottom: 16px; text-align: center; }
+  .step { display: flex; gap: 14px; margin-bottom: 20px; align-items: flex-start; }
+  .step-num {
+    flex: 0 0 32px; width: 32px; height: 32px; border-radius: 50%; background: var(--yellow);
+    color: var(--navy); font-family: "Poppins", sans-serif; font-weight: 800; font-size: .95rem;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step p { font-size: .98rem; }
+  .step p strong { color: var(--navy); }
+
+  .socials { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+  .socials a {
+    display: inline-block; padding: 11px 22px; border-radius: 999px; text-decoration: none;
+    font-weight: 700; font-size: .92rem; border: 2px solid var(--navy); color: var(--navy);
+    transition: background .15s, color .15s;
+  }
+  .socials a:hover { background: var(--navy); color: #fff; }
+
+  .btn-home {
+    display: inline-block; padding: 15px 36px; border-radius: 999px; background: var(--navy);
+    color: #fff; font-weight: 700; text-decoration: none; font-size: 1rem;
+    transition: background .15s, transform .15s; box-shadow: 0 4px 16px rgba(26,43,74,.25);
+  }
+  .btn-home:hover { background: #243a63; transform: translateY(-2px); }
+
+  footer { background: var(--navy); color: rgba(255,255,255,.6); padding: 24px 0; text-align: center; font-size: .85rem; }
+  footer a { color: rgba(255,255,255,.8); }
+
+  @media (max-width: 640px) {
+    .card { padding: 40px 24px; }
+    main { padding: 40px 0; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="index.html">Corny <span>Inc.</span></a>
+    <a class="nav-home" href="index.html">← Back Home</a>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+    <div class="card">
+      <div class="check">✓</div>
+      <h1>You're In! <span class="accent">You're One of the First 100.</span></h1>
+      <p class="lead">Welcome to <strong>The Corny Crew</strong>. You just claimed your spot among the founding members — the people who believed in us before launch day.</p>
+      <p class="sub">Keep an eye on your inbox. Holiday deals, contest announcements, and free merch drawings are coming your way.</p>
+
+      <div class="next-steps">
+        <h2>What to Do Next</h2>
+        <div class="step">
+          <div class="step-num">1</div>
+          <p><strong>Check your email.</strong> Your confirmation is on its way. (Check spam if you don't see it — and mark us as a safe sender so you never miss a drop.)</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <p><strong>Follow us on socials.</strong> Sneak peeks, design contests, and community votes happen there first.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <p><strong>Tell your crew.</strong> The First 100 spots are limited — and matching holiday gear is better when the whole group is in. Share the site with your family, your team, your squad.</p>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.instagram.com/corny_inc" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@corny.inc" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://x.com/Corny_inc" target="_blank" rel="noopener">X</a>
+        <a href="https://www.facebook.com/profile.php?id=61596280425765" target="_blank" rel="noopener">Facebook</a>
+      </div>
+
+      <a class="btn-home" href="index.html">Back to CornyInc.com</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Corny Inc. All rights reserved. Operated by RB2I LLC. · <a href="legal.html">Legal &amp; Terms</a></div>
+</footer>
+
+</body>
+</html>
